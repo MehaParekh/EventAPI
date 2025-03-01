@@ -47,3 +47,6 @@ Event management API using Django Rest Framework with role-based access, event c
 **6. SQL Query**
   
    - In models.py file get_top_events is raw sql query to fetch top 3 events by tickets sold
+
+    - """ SELECT e.id, e.name, e.total_tickets, e.tickets_sold FROM events_event e ORDER BY 
+                        e.tickets_sold DESC LIMIT 3;"""
